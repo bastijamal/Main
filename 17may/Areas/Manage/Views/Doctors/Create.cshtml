@@ -1,0 +1,27 @@
+﻿@using _17may.Models;
+@model Doctors
+
+<div class="container">
+    <form  method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Fullname</label>
+    <input asp-for="FullName" class="form-control" placeholder="Enter Fullname">
+
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Position</label>
+    <input asp-for="Position" class="form-control" id="exampleInputPassword1" placeholder="Position">
+  </div>
+
+        <div class="form-group">
+            <label for="Description">Photo</label>
+            <input asp-for="ImgFile" class="form-control" id="exampleInputPassword1" placeholder="redirectUrl">
+        </div>
+        <button action="submit"  class="btn btn-primary">Submit</button>
+
+
+</form>
+
+
+</div>
